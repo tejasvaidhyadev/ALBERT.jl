@@ -1,6 +1,7 @@
 # ALBERT.jl
 The Repo contains implementation of ALBERT in julia
-Library is made on top of Transform.jl
+
+
 Simply implementation of [ALBERT(A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE REPRESENTATIONS)](https://arxiv.org/pdf/1909.11942.pdf). This implementation is based on [Transformers.jl](https://github.com/chengchingwen/Transformers.jl/blob/master/example/BERT/pretrain.jl)
 
 ## KEYWORD IN ALBERT 
