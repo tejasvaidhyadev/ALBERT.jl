@@ -13,8 +13,7 @@ export load_albert_pretrain, albert_pretrain_task, masklmloss,WordPiece,tokenise
 #implement batchmul, batchtril for flux
 
 include("tfckpt2bsonforalbert.jl")
-
-include("alberttokeniser.jl")
+include("alberttokenizer.jl")
 include("sentencepiece.jl")
 include("albert.jl")
 
