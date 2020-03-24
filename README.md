@@ -22,5 +22,15 @@ Version-1 of ALBERT models
 - [Xlarge](https://drive.google.com/drive/u/1/folders/1HHTlS_jBYRE4cG0elITEH7fAkiNmrEgz) from [[link](https://storage.googleapis.com/albert_models/albert_xlarge_v1.tar.gz)]
 - [Xxlarge](https://drive.google.com/drive/u/1/folders/1HHTlS_jBYRE4cG0elITEH7fAkiNmrEgz) from [[link](https://storage.googleapis.com/albert_models/albert_xxlarge_v1.tar.gz)]
 
+## Flie Structure
+**src/albert.jl** - File contains wrapper for ALBERT transformer.It is implemented on top of Transformers.jl 
+
+**src/alberttokenizer.jl** - File contains Albert tokenizer implemented on top of WordTokenizer to tokenize the word before feeding into wordpiece or sentence piece
+
+**src/model.jl** - It contains model structure of original ALBERT model released by google-Research
+**src/sentencepiece.jl** - Currently it contains Wordpiece model (directly taken from Transformers.jl) and planning to replace it with complete sentence piece model
+
+**tfckpt2bsonforalbert.jl** - It is used to convert Tensorflow checkpoint file to Raw bson file 
+
 ## Status
 The code is still underdevelopment 
