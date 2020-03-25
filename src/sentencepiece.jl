@@ -1,3 +1,4 @@
+# will be replace with Sentencepiece 
 struct WordPiece
   vocab::Vector{String}
   unk_idx::Int
@@ -60,7 +61,7 @@ function (wq::_wp_equal{first})(s) where first
     start = 1
   else
     start = 3
-    iszero(_cmp(s, "##", 1, 1, 2)) || return false
+    iszero(_cmp(s, "", 1, 1, 2)) || return false
   end
 
   wq.bound - wq.base == length(s) - start || return false
