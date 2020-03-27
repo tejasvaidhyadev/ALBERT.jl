@@ -44,4 +44,4 @@ The code is still underdevelopment
 most functions is under development and will be available soon 
 
 ## Demo
-[Demo](docs/Demo.ipynb) flie contains the example of some of completed function.
+[Demo](docs/Demo.ipynb) file contains the example of some of completed function.
