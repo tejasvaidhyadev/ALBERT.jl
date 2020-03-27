@@ -34,3 +34,14 @@ Version-1 of ALBERT models
 
 ## Status
 The code is still underdevelopment 
+## Checklist
+- [x] file to convert Tensflowcheckpoint to bson
+- [X] Space tokenizer (planning to update it as per need of sentencepiece)
+- [ ] SentencePiece
+- [ ] wrapper for ALBERT Transformer
+- [X] Model file containing structure of ALBERT
+   
+most functions is under development and will be available soon 
+
+## Demo
+[Demo](docs/Demo.ipynb) flie contains the example of some of completed function.
