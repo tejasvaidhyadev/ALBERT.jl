@@ -177,24 +177,24 @@ function load_bert_from_tfbson(config, weights)
     embedding = Dict{Symbol, Any}()
 
     tok_emb = Embed(
-    config["embeddings"],
+    config["embedding_size"],
     config["vocab_size"]
   )
 
     seg_emb = Embed(
-        config["embeddings"],
+        config["embedding_size"],
         config["type_vocab_size"]
     )
 
     posi_emb = PositionEmbedding(
-        config["embeddings"],
+        config["embedding_size"],
         config["max_position_embeddings"];
         trainable = true
     )
 
     emb_post = Positionwise(
         LayerNorm(
-             config["embeddings"]
+             config["embedding_size"]
         ),
         Dropout(
             config["hidden_dropout_prob"]
@@ -212,12 +212,12 @@ function load_bert_from_tfbson(config, weights)
     masklm = (
         transform = Chain(
             Dense(
-                config["embeddings"],
+                config["embedding_size"],
                 config["hidden_size"],
                 get_activation(config["hidden_act"])
             ),
             LayerNorm(
-                config["embeddings"]
+                config["embedding_size"]
             )
         ),
         output_bias = randn(
