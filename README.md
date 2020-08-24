@@ -51,4 +51,4 @@ most functions is under development and will be available soon
 
 sophisticated implemented and doc can be founded [here](https://github.com/JuliaText/TextAnalysis.jl/pull/203)
 ## Demo
-[Demo](docs/Demo.ipynb) file contains the example of some of completed function.
+[Demo](https://github.com/tejasvaidhyadev/ALBERT.jl/blob/master/docs/Pretraining_Tutorial(ALBERT).ipynb) file contains tutorial for pretraining.
